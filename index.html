@@ -209,7 +209,7 @@
           <div class="slider top_slider">
             <img style="max-width: 324px; height: 220px;" src="/assets/images/slide_5_1.png" alt="Slide 1">
             <img style="max-width: 324px; height: 220px;" src="/assets/images/slide_5_2.png" alt="Slide 2">
-            <img style="max-width: 160px; height: 220px;" src="/assets/images/slide_5_3.JPG" alt="Slide 3">
+            <img style="max-width: 160px; height: 220px;" src="/assets/images/slide_5_3.png" alt="Slide 3">
           </div>
 
           <div class="slider bottom_slider">
@@ -403,35 +403,6 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <script>
-    $(document).ready(function () {
-      $('.tarifs .container > ul').slick({
-        variableWidth: true,
-        infinite: false,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-      })
-
-      $('.reviews .slider').slick({
-        variableWidth: true,
-        infinite: true,
-        centerPadding: '20px',
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-      })
-
-
-    });
-  </script>
-
-  <script>
     document.addEventListener('DOMContentLoaded', function () {
       AOS.init({
         duration: 800,
@@ -478,6 +449,33 @@
           }, 100)
         })
       }
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.tarifs .container > ul').slick({
+        variableWidth: true,
+        infinite: false,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+      })
+
+      $('.reviews .slider').slick({
+        variableWidth: true,
+        infinite: true,
+        centerPadding: '20px',
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+      })
     });
   </script>
 
