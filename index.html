@@ -14,6 +14,35 @@
   <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 800,
+        once: true,
+        startEvent: 'load'
+      })
+
+      var aosElements = document.querySelectorAll('[data-aos]')
+
+      function isInViewport(el) {
+        var rect = el.getBoundingClientRect()
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        )
+      }
+
+      aosElements.forEach(function (el) {
+        if (isInViewport(el)) {
+          el.classList.add('aos-animate')
+        }
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -400,37 +429,6 @@
     </section>
 
   </main>
-
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      AOS.init({
-        duration: 800,
-        once: true,
-        startEvent: 'load'
-      })
-
-      var aosElements = document.querySelectorAll('[data-aos]')
-
-      function isInViewport(el) {
-        var rect = el.getBoundingClientRect()
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        )
-      }
-
-      aosElements.forEach(function (el) {
-        if (isInViewport(el)) {
-          el.classList.add('aos-animate')
-        }
-      })
-    })
-  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
