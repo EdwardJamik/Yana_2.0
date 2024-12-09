@@ -296,6 +296,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  animation: sway 1.8s infinite;
   z-index: 1;
 }
 .top .container > div:first-child .top_label > span {
@@ -307,8 +308,8 @@ main {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
-  color: #f9faf2;
   color: #801316;
+  margin-left: 4px;
 }
 .top .container > div:first-child h2 {
   margin-top: 28px;
@@ -865,8 +866,12 @@ main {
 .reviews .container .slider.top_slider {
   margin-bottom: 18px;
 }
+.reviews .container .slider.top_slider img {
+  border-radius: 8px;
+}
 .reviews .container .slider img {
-  padding-right: 16px;
+  margin-right: 16px;
+  border-radius: 8px;
 }
 
 .tarifs .container {

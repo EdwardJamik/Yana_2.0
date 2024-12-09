@@ -128,6 +128,7 @@ main {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
+            animation: sway 1.8s infinite;
             z-index: 1;
           }
 
@@ -139,8 +140,8 @@ main {
             text-align: center;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
-            color: #f9faf2;
             color: #801316;
+            margin-left: 4px;
           }
         }
 
@@ -785,6 +786,9 @@ main {
 
       &.top_slider {
         margin-bottom: 18px;
+        & img {
+          border-radius: 8px;
+        }
       }
 
       & .slick-slide {
@@ -793,7 +797,8 @@ main {
 
       & img {
         // max-width: 334px;
-        padding-right: 16px;
+        margin-right: 16px;
+        border-radius: 8px;
       }
     }
   }
