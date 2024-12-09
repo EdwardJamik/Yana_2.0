@@ -911,6 +911,14 @@ main {
 .tarifs .container .tarif_list .block.nude .bottom_block {
   height: 470px;
 }
+.tarifs .container .tarif_list .block.nude .bottom_block .default_button {
+  opacity: 1;
+  color: #171717;
+}
+.tarifs .container .tarif_list .block.basic .default_button {
+  opacity: 1;
+  color: #171717;
+}
 .tarifs .container .tarif_list .block.premium {
   background-color: #171717;
 }
@@ -1056,6 +1064,12 @@ main {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+.tarifs .container .tarif_list .block .bottom_block .default_button {
+  margin: 16px auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .tarifs .container .tarif_list .block .bottom_block .price {
   font-family: FoglihtenNo06;

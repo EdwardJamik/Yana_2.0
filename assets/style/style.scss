@@ -844,6 +844,18 @@ main {
         &.nude {
           & .bottom_block {
             height: 470px;
+
+            & .default_button {
+              opacity: 1;
+              color: #171717;
+            }
+          }
+        }
+
+        &.basic {
+          & .default_button {
+            opacity: 1;
+            color: #171717;
           }
         }
 
@@ -1009,6 +1021,13 @@ main {
                 text-decoration-skip-ink: none;
               }
             }
+          }
+
+          & .default_button {
+            margin: 16px auto 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
           }
 
           & .price {
