@@ -1236,6 +1236,7 @@ main {
       border-top: 0;
       z-index: -1;
     }
+
     & h2 {
       font-family: FoglihtenNo06;
       font-size: 36px;
@@ -1246,6 +1247,19 @@ main {
       text-decoration-skip-ink: none;
       color: #801316;
       text-transform: uppercase;
+
+      & > span {
+        font-family: FoglihtenNo06;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 43.2px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #801316;
+        text-transform: uppercase;
+        animation: sway 1s infinite;
+      }
     }
 
     & > img {
@@ -1270,5 +1284,18 @@ main {
         right: 50px;
       }
     }
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
   }
 }

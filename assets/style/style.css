@@ -1253,6 +1253,19 @@ main {
   color: #801316;
   text-transform: uppercase;
 }
+.question .container h2 > span {
+  font-family: FoglihtenNo06;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #801316;
+  text-transform: uppercase;
+  animation: sway 1s infinite;
+}
 .question .container > img {
   max-width: 295px;
   width: 100%;
@@ -1272,4 +1285,16 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   right: 50px;
+}
+
+@keyframes sway {
+  0%, 100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
