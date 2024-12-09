@@ -130,6 +130,18 @@ main {
             background-size: contain;
             z-index: 1;
           }
+
+          & > span {
+            font-family: FoglihtenNo06;
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 22.4px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #f9faf2;
+            color: #801316;
+          }
         }
 
         & h2 {

@@ -298,6 +298,18 @@ main {
   background-size: contain;
   z-index: 1;
 }
+.top .container > div:first-child .top_label > span {
+  font-family: FoglihtenNo06;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 22.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #f9faf2;
+  color: #801316;
+}
 .top .container > div:first-child h2 {
   margin-top: 28px;
   font-family: Raleway;
