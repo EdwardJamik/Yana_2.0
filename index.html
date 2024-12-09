@@ -410,28 +410,34 @@
       AOS.init({
         duration: 800,
         once: true,
+        mobile: true,
         startEvent: 'load'
       })
 
-      // var aosElements = document.querySelectorAll('[data-aos]')
+      var aosElements = document.querySelectorAll('[aos]') // Змінено з data-aos на aos
 
-      // function isInViewport(el) {
-      //   var rect = el.getBoundingClientRect()
-      //   return (
-      //     rect.top >= 0 &&
-      //     rect.left >= 0 &&
-      //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      //   )
-      // }
+      function isInViewport(el) {
+        var rect = el.getBoundingClientRect()
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        )
+      }
 
-      // aosElements.forEach(function (el) {
-      //   if (isInViewport(el)) {
-      //     el.classList.add('aos-animate')
-      //   }
-      // })
+      aosElements.forEach(function (el) {
+        if (isInViewport(el)) {
+          el.classList.add('aos-animate')
+        }
+      })
+
+      // Додаткове примусове оновлення
+      window.addEventListener('scroll', AOS.refresh)
     })
+  </script>
 
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
       var links = document.querySelectorAll('.join_link')
 

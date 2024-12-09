@@ -127,9 +127,7 @@ dd {
 }
 
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
   background: #000;
 }
@@ -1304,4 +1302,12 @@ main {
   75% {
     opacity: 0;
   }
+}
+[aos] {
+  transition-duration: 400ms;
+  opacity: 0;
+}
+
+[aos].aos-animate {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

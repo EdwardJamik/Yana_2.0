@@ -1305,3 +1305,11 @@ main {
     opacity: 0;
   }
 }
+
+[aos] {
+  transition-duration: 400ms;
+  opacity: 0;
+}
+[aos].aos-animate {
+  opacity: 1;
+}
