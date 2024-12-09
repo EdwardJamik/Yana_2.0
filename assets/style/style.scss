@@ -78,6 +78,16 @@ main {
     background-repeat: no-repeat;
   }
 
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    box-shadow: 0 -18px 45px 52px #171717;
+    background-color: #171717;
+  }
+
   & .container {
     display: flex;
     flex-direction: column;
@@ -327,7 +337,7 @@ main {
           position: absolute;
           background-image: url("../images/first_list_icon.png");
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: 14px;
           width: 14px;
           height: 14px;
           left: 0;
