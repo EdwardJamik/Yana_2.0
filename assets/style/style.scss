@@ -990,11 +990,13 @@ main {
         }
 
         & .bottom_block {
+          position: relative;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
           height: 524px;
+          z-index: 9;
 
           & ul {
             position: relative;

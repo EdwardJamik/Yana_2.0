@@ -1035,11 +1035,13 @@ main {
   width: 100%;
 }
 .tarifs .container .tarif_list .block .bottom_block {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 524px;
+  z-index: 9;
 }
 .tarifs .container .tarif_list .block .bottom_block ul {
   position: relative;
