@@ -1046,6 +1046,13 @@ main {
             width: 100%;
             display: flex;
             justify-content: center;
+
+            & > span {
+              font-family: "FoglihtenNo06";
+              font-size: 15px;
+              margin: 0 4px 0 6px;
+              font-weight: 500;
+            }
           }
 
           & .price {

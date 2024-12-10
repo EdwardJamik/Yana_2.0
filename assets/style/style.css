@@ -1088,6 +1088,12 @@ main {
   display: flex;
   justify-content: center;
 }
+.tarifs .container .tarif_list .block .bottom_block .default_button > span {
+  font-family: "FoglihtenNo06";
+  font-size: 15px;
+  margin: 0 4px 0 6px;
+  font-weight: 500;
+}
 .tarifs .container .tarif_list .block .bottom_block .price {
   font-family: FoglihtenNo06;
   font-size: 48px;
